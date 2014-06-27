@@ -1,0 +1,25 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+
+body {
+	font-family: $georgia;
+  -webkit-font-smoothing: antialiased;
+$body-line-height: golden-ratio(1em, 1) !default;
+
+	}
+// Overrides Neat's default
+$max-width: em(1024);
+
+// Breakpoints
+$mobile: new-breakpoint(max-width 500px 4);
+
+#grid {
+	@include outer-container;
+}
+
+.feed-entry {
+	@include span-columns(3);
+	@include omega(4n);
+	@include media($mobile) {@include span-columns(3);}
+}

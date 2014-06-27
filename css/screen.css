@@ -1,0 +1,49 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Leigh\/Dropbox\/brick-feed\/sass\/neat\/grid\/_grid\.scss}line{font-family:\000032}}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Leigh\/Dropbox\/brick-feed\/sass\/_base\.scss}line{font-family:\000035}}
+body {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  -webkit-font-smoothing: antialiased; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Leigh\/Dropbox\/brick-feed\/sass\/_base\.scss}line{font-family:\0000317}}
+#grid {
+  max-width: 64em;
+  margin-left: auto;
+  margin-right: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Leigh\/Dropbox\/brick-feed\/sass\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000315}}
+  #grid:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Leigh\/Dropbox\/brick-feed\/sass\/_base\.scss}line{font-family:\0000321}}
+.feed-entry {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Leigh\/Dropbox\/brick-feed\/sass\/neat\/grid\/_span-columns\.scss}line{font-family:\0000340}}
+  .feed-entry:last-child {
+    margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Leigh\/Dropbox\/brick-feed\/sass\/neat\/grid\/_omega\.scss}line{font-family:\0000370}}
+  .feed-entry:nth-child(4n) {
+    margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Leigh\/Dropbox\/brick-feed\/sass\/neat\/grid\/_omega\.scss}line{font-family:\0000375}}
+  .feed-entry:nth-child(4n+1) {
+    clear: left; }
+  @media screen and (max-width: 500px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Leigh\/Dropbox\/brick-feed\/sass\/_base\.scss}line{font-family:\0000321}}
+    .feed-entry {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 73.14426%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Leigh\/Dropbox\/brick-feed\/sass\/neat\/grid\/_span-columns\.scss}line{font-family:\0000340}}
+      .feed-entry:last-child {
+        margin-right: 0; } }
+
+/*# sourceMappingURL=screen.css.map */
