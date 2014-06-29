@@ -1,25 +1,71 @@
 @import "bourbon/bourbon";
+@import "variables";
 @import "neat/neat";
-
-
-body {
-	font-family: $georgia;
-  -webkit-font-smoothing: antialiased;
-$body-line-height: golden-ratio(1em, 1) !default;
-
-	}
-// Overrides Neat's default
-$max-width: em(1024);
 
 // Breakpoints
 $mobile: new-breakpoint(max-width 500px 4);
 
-#grid {
-	@include outer-container;
+body {
+	background-color: rgba(244, 208, 63, 0.7);
+	font-family: $georgia;
+  -webkit-font-smoothing: antialiased;
+	$body-line-height: golden-ratio(1em, 1) !default;
+	a:link {color: white;}
+	a:visited {color: $dark-blue;}
+	a:hover {color: $orange;}
+	}
+
+header {
+	padding-top: 1em;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	font-size: 4em;
+	color: $shamrock;
+	@include media($mobile) {
+		font-size: 2em;
+	}
+
 }
 
+#grid {
+	padding: 1em;
+	display: block;
+	width: 100%;
+}
 .feed-entry {
+	size: (20% 20%);
+  @include pad(30px -20px 10px default);
+  box-shadow: inset 0 0 0 7px rgba(236, 240, 241, .5);
+	margin-top: 1.5em;
+	margin-right: 1.5em;
 	@include span-columns(3);
-	@include omega(4n);
-	@include media($mobile) {@include span-columns(3);}
+	@include omega(3n);
+	@include media($mobile) {
+		width: 100%;
+		height: 12em;
+			}	
+	border-radius: 3px;
+	background-color: $shamrock;
+
+}
+
+.feed-header {
+	padding-left: 1em;
+	padding-right: 1em;
+	font-size: 1.1em;
+	text-align: center;
+	@include media($mobile) {
+		font-size: 0.9em;
+	}
+}
+
+
+.feed-snippet {
+	color: white;
+	padding-top: -1em;
+	padding-right: 1em;
+	padding-left: 1em;
+	font-size: 0.95em;
+	text-align: justify;
 }

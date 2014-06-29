@@ -1,49 +1,71 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Leigh\/Dropbox\/brick-feed\/sass\/neat\/grid\/_grid\.scss}line{font-family:\000032}}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Leigh\/Dropbox\/brick-feed\/sass\/_base\.scss}line{font-family:\000035}}
 body {
+  background-color: rgba(244, 208, 63, 0.7);
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   -webkit-font-smoothing: antialiased; }
+  body a:link {
+    color: white; }
+  body a:visited {
+    color: #2c3e50; }
+  body a:hover {
+    color: #f39c12; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Leigh\/Dropbox\/brick-feed\/sass\/_base\.scss}line{font-family:\0000317}}
+header {
+  padding-top: 1em;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 4em;
+  color: #26a65b; }
+  @media screen and (max-width: 500px) {
+    header {
+      font-size: 2em; } }
+
 #grid {
-  max-width: 64em;
-  margin-left: auto;
-  margin-right: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Leigh\/Dropbox\/brick-feed\/sass\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000315}}
-  #grid:after {
-    content: "";
-    display: table;
-    clear: both; }
+  padding: 1em;
+  display: block;
+  width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Leigh\/Dropbox\/brick-feed\/sass\/_base\.scss}line{font-family:\0000321}}
 .feed-entry {
+  size: 20% 20%;
+  padding: 30px -20px 10px 3.16844%;
+  box-shadow: inset 0 0 0 7px rgba(236, 240, 241, 0.5);
+  margin-top: 1.5em;
+  margin-right: 1.5em;
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Leigh\/Dropbox\/brick-feed\/sass\/neat\/grid\/_span-columns\.scss}line{font-family:\0000340}}
+  margin-right: 3.16844%;
+  width: 31.22104%;
+  border-radius: 3px;
+  background-color: #26a65b; }
   .feed-entry:last-child {
     margin-right: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Leigh\/Dropbox\/brick-feed\/sass\/neat\/grid\/_omega\.scss}line{font-family:\0000370}}
-  .feed-entry:nth-child(4n) {
+  .feed-entry:nth-child(3n) {
     margin-right: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Leigh\/Dropbox\/brick-feed\/sass\/neat\/grid\/_omega\.scss}line{font-family:\0000375}}
-  .feed-entry:nth-child(4n+1) {
+  .feed-entry:nth-child(3n+1) {
     clear: left; }
   @media screen and (max-width: 500px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Leigh\/Dropbox\/brick-feed\/sass\/_base\.scss}line{font-family:\0000321}}
     .feed-entry {
-      float: left;
-      display: block;
-      margin-right: 7.42297%;
-      width: 73.14426%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Leigh\/Dropbox\/brick-feed\/sass\/neat\/grid\/_span-columns\.scss}line{font-family:\0000340}}
-      .feed-entry:last-child {
-        margin-right: 0; } }
+      width: 100%;
+      height: 12em; } }
 
-/*# sourceMappingURL=screen.css.map */
+.feed-header {
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1.1em;
+  text-align: center; }
+  @media screen and (max-width: 500px) {
+    .feed-header {
+      font-size: 0.9em; } }
+
+.feed-snippet {
+  color: white;
+  padding-top: -1em;
+  padding-right: 1em;
+  padding-left: 1em;
+  font-size: 0.95em;
+  text-align: justify; }
