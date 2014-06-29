@@ -10,22 +10,26 @@
 		<meta name="author" content="Leigh Johnson" />
 		<link rel="stylesheet" type="text/css" href="css/screen.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
-        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     	<script type="text/javascript" src="js/feed.js"></script>
-
 
 
   </head>
   <body>
-  	<header>Hello, Matthew.
-  	<img src="img/weed.png" alt="Pot Stocks" height="100" width="100"></header>
-    
-    <ul id="grid">
+  	<header><img src="img/weed.png" alt="Pot Stocks" height="75" width="75"><h1>Pot Stocks</h1>
+  	<p> Filter by:</p>
+  	<div class="button filter" id="showScience" data-filter=".science">Science</div>
+    <div class="button filter" id="showArt" data-filter=".art">Arts</div>
+    <div class="button filter" id="showBusiness" data-filter=".business">Business</div>
+    <div class="button filter" id="showEnvironment" data-filter=".environment">Environment</div>
+  	</header>
 
-    </ul>
+    <div id="grid">
 
-
+    </div>
 
   </body>
 </html>
